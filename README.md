@@ -45,7 +45,7 @@ menggunakan Jupyter Notebook.
 
 # Ringkasan Setiap Chapter
 
-## Chapter 1 --- Introducing Deep Learning: Why You Should Learn It
+## Chapter 1 - Introducing Deep Learning: Why You Should Learn It
 
 Chapter pertama memperkenalkan konsep dasar deep learning dan alasan
 mengapa bidang ini penting untuk dipelajari.
@@ -61,7 +61,7 @@ Chapter ini menjadi dasar sebelum masuk ke pembangunan neural network.
 
 ------------------------------------------------------------------------
 
-## Chapter 2 --- Fundamental Concepts: How Do Machines Learn?
+## Chapter 2 - Fundamental Concepts: How Do Machines Learn?
 
 Chapter kedua membahas bagaimana mesin dapat belajar dari data.
 
@@ -78,7 +78,7 @@ Chapter ini menjelaskan dasar proses pembelajaran mesin.
 
 ------------------------------------------------------------------------
 
-## Chapter 3 --- Introduction to Neural Prediction: Forward Propagation
+## Chapter 3 - Introduction to Neural Prediction: Forward Propagation
 
 Chapter ketiga mulai membangun neural network sederhana.
 
@@ -95,7 +95,7 @@ Chapter ini menjelaskan bagaimana neural network menghasilkan prediksi.
 
 ------------------------------------------------------------------------
 
-## Chapter 4 --- Introduction to Neural Learning: Gradient Descent
+## Chapter 4 - Introduction to Neural Learning: Gradient Descent
 
 Chapter keempat membahas bagaimana neural network mulai belajar dan
 memperbaiki kesalahan.
@@ -112,7 +112,7 @@ Chapter ini menjelaskan proses optimasi pada neural network.
 
 ------------------------------------------------------------------------
 
-## Chapter 5 --- Learning Multiple Weights at a Time
+## Chapter 5 - Learning Multiple Weights at a Time
 
 Chapter kelima mengembangkan gradient descent untuk menangani banyak
 weight.
@@ -130,7 +130,7 @@ yang lebih kompleks.
 
 ------------------------------------------------------------------------
 
-## Chapter 6 --- Building Your First Deep Neural Network
+## Chapter 6 - Building Your First Deep Neural Network
 
 Chapter keenam membangun deep neural network pertama.
 
