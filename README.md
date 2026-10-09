@@ -3,6 +3,7 @@
 ## Identitas Mahasiswa
 
 **Nama:** Monica Febyana
+
 **NIM:** 101032330068
 
 ------------------------------------------------------------------------
@@ -19,10 +20,6 @@ Tujuan pembuatan repository ini adalah untuk memahami konsep dasar
 hingga pembangunan deep neural network melalui implementasi Python
 menggunakan Jupyter Notebook.
 
-Setiap chapter dibuat ulang dengan: - Penjelasan konsep dalam Bahasa
-Indonesia - Implementasi kode Python - Eksperimen sederhana menggunakan
-NumPy - Dokumentasi proses pembelajaran deep learning
-
 ------------------------------------------------------------------------
 
 # Struktur Repository
@@ -30,23 +27,17 @@ NumPy - Dokumentasi proses pembelajaran deep learning
     Grokking-Deep-Learning-Recreation/
 
     │
-    ├── Chapter_1_Introducing_Deep_Learning/
-    │   └── Notebook Chapter 1
+    ├── Chapter 1.ipnyb
     │
-    ├── Chapter_2_Fundamental_Concepts/
-    │   └── Notebook Chapter 2
+    ├── Chapter 2.ipnyb
     │
-    ├── Chapter_3_Neural_Prediction/
-    │   └── Notebook Chapter 3
+    ├── Chapter 3.ipnyb
     │
-    ├── Chapter_4_Neural_Learning/
-    │   └── Notebook Chapter 4
+    ├── Chapter 4.ipnyb
     │
-    ├── Chapter_5_Multiple_Weights/
-    │   └── Notebook Chapter 5
+    ├── Chapter 5.ipnyb
     │
-    ├── Chapter_6_Deep_Neural_Network/
-    │   └── Notebook Chapter 6
+    ├── Chapter 6.ipnyb
     │
     └── requirements.txt
 
@@ -59,10 +50,12 @@ NumPy - Dokumentasi proses pembelajaran deep learning
 Chapter pertama memperkenalkan konsep dasar deep learning dan alasan
 mengapa bidang ini penting untuk dipelajari.
 
-Pembahasan utama: - Pengertian Artificial Intelligence - Hubungan
-Machine Learning dan Deep Learning - Perkembangan deep learning -
-Aplikasi deep learning dalam kehidupan nyata - Persiapan lingkungan
-Python dan NumPy
+Pembahasan utama: 
+- Pengertian Artificial Intelligence 
+- Hubungan Machine Learning dan Deep Learning 
+- Perkembangan deep learning 
+- Aplikasi deep learning dalam kehidupan nyata 
+- Persiapan lingkungan Python dan NumPy
 
 Chapter ini menjadi dasar sebelum masuk ke pembangunan neural network.
 
@@ -72,10 +65,14 @@ Chapter ini menjadi dasar sebelum masuk ke pembangunan neural network.
 
 Chapter kedua membahas bagaimana mesin dapat belajar dari data.
 
-Pembahasan utama: - Konsep Machine Learning - Perbedaan Artificial
-Intelligence, Machine Learning, dan Deep Learning - Supervised
-Learning - Unsupervised Learning - Parametric Learning - Nonparametric
-Learning - Konsep Predict, Compare, dan Learn
+Pembahasan utama: 
+- Konsep Machine Learning 
+- Perbedaan Artificial Intelligence, Machine Learning, dan Deep Learning 
+- Supervised Learning 
+- Unsupervised Learning 
+- Parametric Learning 
+- Nonparametric Learning 
+- Konsep Predict, Compare, dan Learn
 
 Chapter ini menjelaskan dasar proses pembelajaran mesin.
 
@@ -85,10 +82,14 @@ Chapter ini menjelaskan dasar proses pembelajaran mesin.
 
 Chapter ketiga mulai membangun neural network sederhana.
 
-Pembahasan utama: - Konsep neural network melakukan prediksi - Hubungan
-input, weight, dan output - Single input dan single output - Multiple
-inputs - Multiple outputs - Operasi matrix menggunakan NumPy - Forward
-propagation
+Pembahasan utama: 
+- Konsep neural network melakukan prediksi 
+- Hubungan input, weight, dan output 
+- Single input dan single output 
+- Multiple inputs 
+- Multiple outputs 
+- Operasi matrix menggunakan NumPy 
+- Forward propagation
 
 Chapter ini menjelaskan bagaimana neural network menghasilkan prediksi.
 
@@ -99,9 +100,13 @@ Chapter ini menjelaskan bagaimana neural network menghasilkan prediksi.
 Chapter keempat membahas bagaimana neural network mulai belajar dan
 memperbaiki kesalahan.
 
-Pembahasan utama: - Prediksi dan error - Membandingkan hasil prediksi
-dengan target - Hot and cold learning - Gradient descent - Learning
-rate - Perubahan nilai weight
+Pembahasan utama: 
+- Prediksi dan error 
+- Membandingkan hasil prediksi dengan target 
+- Hot and cold learning 
+- Gradient descent 
+- Learning rate 
+- Perubahan nilai weight
 
 Chapter ini menjelaskan proses optimasi pada neural network.
 
@@ -112,10 +117,13 @@ Chapter ini menjelaskan proses optimasi pada neural network.
 Chapter kelima mengembangkan gradient descent untuk menangani banyak
 weight.
 
-Pembahasan utama: - Multiple input neural network - Banyak weight dalam
-satu jaringan - Update weight secara bersamaan - Multiple output -
-Representasi weight menggunakan matrix - Hubungan weight dengan pola
-yang dipelajari
+Pembahasan utama: 
+- Multiple input neural network 
+- Banyak weight dalam satu jaringan 
+- Update weight secara bersamaan 
+- Multiple output 
+- Representasi weight menggunakan matrix 
+- Hubungan weight dengan pola yang dipelajari
 
 Chapter ini menjelaskan bagaimana neural network menangani parameter
 yang lebih kompleks.
@@ -126,11 +134,17 @@ yang lebih kompleks.
 
 Chapter keenam membangun deep neural network pertama.
 
-Pembahasan utama: - Permasalahan streetlight - Hubungan antar matrix -
-Membangun layer neural network - Training menggunakan dataset - Full
-gradient descent - Batch gradient descent - Stochastic gradient
-descent - Neural network mempelajari korelasi data - Pengenalan
-backpropagation - Linear dan nonlinear network
+Pembahasan utama: 
+- Permasalahan streetlight 
+- Hubungan antar matrix 
+- Membangun layer neural network 
+- Training menggunakan dataset 
+- Full gradient descent 
+- Batch gradient descent 
+- Stochastic gradient descent 
+- Neural network mempelajari korelasi data 
+- Pengenalan backpropagation 
+- Linear dan nonlinear network
 
 Chapter ini menggabungkan konsep sebelumnya menjadi sebuah deep neural
 network.
