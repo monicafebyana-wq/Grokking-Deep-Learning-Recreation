@@ -2,8 +2,8 @@
 
 ## Identitas Mahasiswa
 
-**Nama:** \[Masukkan Nama\]\
-**NIM:** \[Masukkan NIM\]
+**Nama:** Monica Febyana
+**NIM:** 101032330068
 
 ------------------------------------------------------------------------
 
