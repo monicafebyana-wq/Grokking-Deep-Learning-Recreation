@@ -39,6 +39,14 @@ menggunakan Jupyter Notebook.
     │
     ├── Chapter 6.ipnyb
     │
+    ├── Chapter 7.ipnyb
+    │
+    ├── Chapter 8.ipnyb
+    │
+    ├── Chapter 9.ipnyb
+    │
+    ├── Chapter 10.ipnyb
+    │
     └── requirements.txt
 
 ------------------------------------------------------------------------
@@ -148,6 +156,77 @@ Pembahasan utama:
 
 Chapter ini menggabungkan konsep sebelumnya menjadi sebuah deep neural
 network.
+
+------------------------------------------------------------------------
+
+## Chapter 7 - How to Picture Neural Networks: In Your Head and on Paper
+
+Chapter ketujuh membahas cara memahami struktur neural network melalui
+visualisasi.
+
+Pembahasan: 
+- Struktur neural network 
+- Input layer 
+- Hidden layer 
+- Output layer 
+- Hubungan antar neuron 
+- Representasi weight 
+- Membaca arsitektur jaringan
+
+Chapter ini membantu memahami jaringan yang semakin kompleks.
+
+------------------------------------------------------------------------
+
+## Chapter 8 - Learning from Multiple Layers: Introduction to Backpropagation
+
+Chapter kedelapan memperdalam konsep backpropagation.
+
+Pembahasan: 
+- Forward propagation pada banyak layer 
+- Error propagation 
+- Backward propagation 
+- Weight update 
+- Training neural network multi-layer
+
+Chapter ini menjelaskan bagaimana error digunakan untuk memperbaiki
+seluruh jaringan.
+
+------------------------------------------------------------------------
+
+## Chapter 9 - Modeling Probabilities and Nonlinearities: Activation Functions
+
+Chapter kesembilan membahas activation function yang membuat neural
+network mampu mempelajari pola nonlinear.
+
+Pembahasan: 
+- Fungsi aktivasi 
+- ReLU 
+- Sigmoid 
+- Tanh 
+- Softmax 
+- Derivative activation function 
+- Activation pada neural network
+
+Chapter ini menjelaskan peran nonlinearitas dalam deep learning.
+
+------------------------------------------------------------------------
+
+## Chapter 10 - Introducing Convolutional Neural Networks (CNN)
+
+Chapter kesepuluh memperkenalkan Convolutional Neural Network untuk
+pengolahan data gambar.
+
+Pembahasan: 
+- Permasalahan pengolahan gambar dengan neural network biasa 
+- Konsep convolution 
+- Filter dan kernel 
+- Feature map 
+- Feature detection 
+- Reuse weight 
+- Pooling 
+- Struktur CNN sederhana
+
+Chapter ini menjelaskan dasar computer vision menggunakan deep learning.
 
 ------------------------------------------------------------------------
 
