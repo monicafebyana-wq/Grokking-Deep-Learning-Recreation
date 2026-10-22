@@ -2,52 +2,54 @@
 
 ## Identitas Mahasiswa
 
-**Nama:** Monica Febyana
-
+**Nama:** Monica Febyana\
 **NIM:** 101032330068
 
 ------------------------------------------------------------------------
 
 ## Deskripsi Repository
 
-Repository ini berisi hasil **recreate Jupyter Notebook** berdasarkan
-buku:
+Repository ini berisi rangkuman, penjelasan teori, dan implementasi
+ulang konsep dari buku ***Grokking Deep Learning*** karya Andrew W.
+Trask dalam bentuk Jupyter Notebook berbahasa Indonesia.
 
-**Grokking Deep Learning**\
-**Andrew W. Trask**
+Notebook disusun untuk membantu memahami konsep dari neural network
+dasar hingga pemodelan bahasa, recurrent neural network (RNN), long
+short-term memory (LSTM), dan privasi data melalui federated learning.
+Implementasi menggunakan Python dan NumPy agar proses komputasi dapat
+dipelajari dengan jelas.
 
-Tujuan pembuatan repository ini adalah untuk memahami konsep dasar
-hingga pembangunan deep neural network melalui implementasi Python
-menggunakan Jupyter Notebook.
+**Catatan reproduksi dan integritas akademik:** beberapa notebook
+menggunakan dataset demonstrasi atau sintetis yang lebih kecil agar
+dapat dijalankan tanpa mengunduh dataset eksternal. Oleh karena itu,
+angka evaluasi dari notebook demonstrasi tidak boleh dianggap sebagai
+hasil benchmark asli dari buku. Setiap penyederhanaan dan keterbatasan
+dijelaskan di notebook terkait.
 
 ------------------------------------------------------------------------
 
-# Struktur Repository
+## Struktur Repository
 
-    Grokking-Deep-Learning-Recreation/
-
-    │
-    ├── Chapter 1.ipnyb
-    │
-    ├── Chapter 2.ipnyb
-    │
-    ├── Chapter 3.ipnyb
-    │
-    ├── Chapter 4.ipnyb
-    │
-    ├── Chapter 5.ipnyb
-    │
-    ├── Chapter 6.ipnyb
-    │
-    ├── Chapter 7.ipnyb
-    │
-    ├── Chapter 8.ipnyb
-    │
-    ├── Chapter 9.ipnyb
-    │
-    ├── Chapter 10.ipnyb
-    │
-    └── requirements.txt
+``` text
+Grokking-Deep-Learning-Recreation/
+├── Chapter 1.ipynb
+├── Chapter 2.ipynb
+├── Chapter 3.ipynb
+├── Chapter 4.ipynb
+├── Chapter 5.ipynb
+├── Chapter 6.ipynb
+├── Chapter 7.ipynb
+├── Chapter 8.ipynb
+├── Chapter 9.ipynb
+├── Chapter 10.ipynb
+├── Chapter 11.ipynb
+├── Chapter 12.ipynb
+├── Chapter 13.ipynb
+├── Chapter 14.ipynb
+├── Chapter 15.ipynb
+├── README.md
+└── requirements.txt
+```
 
 ------------------------------------------------------------------------
 
@@ -55,235 +57,313 @@ menggunakan Jupyter Notebook.
 
 ## Chapter 1 - Introducing Deep Learning: Why You Should Learn It
 
-Chapter pertama memperkenalkan konsep dasar deep learning dan alasan
-mengapa bidang ini penting untuk dipelajari.
+Bab pertama memperkenalkan deep learning, konteks kemunculannya, dan
+alasan mempelajarinya.
 
-Pembahasan utama: 
-- Pengertian Artificial Intelligence 
-- Hubungan Machine Learning dan Deep Learning 
-- Perkembangan deep learning 
-- Aplikasi deep learning dalam kehidupan nyata 
-- Persiapan lingkungan Python dan NumPy
+**Pembahasan utama:** 
+- Hubungan Artificial Intelligence (AI), Machine Learning (ML), dan Deep Learning (DL). 
+- Gambaran umum kemampuan dan penerapan deep learning. 
+- Perangkat dan lingkungan dasar untuk memulai pemrograman.
 
-Chapter ini menjadi dasar sebelum masuk ke pembangunan neural network.
+Bab ini menjadi pengantar sebelum mempelajari cara kerja model.
 
 ------------------------------------------------------------------------
 
 ## Chapter 2 - Fundamental Concepts: How Do Machines Learn?
 
-Chapter kedua membahas bagaimana mesin dapat belajar dari data.
+Bab kedua membahas konsep dasar proses pembelajaran mesin.
 
-Pembahasan utama: 
-- Konsep Machine Learning 
-- Perbedaan Artificial Intelligence, Machine Learning, dan Deep Learning 
-- Supervised Learning 
-- Unsupervised Learning 
-- Parametric Learning 
-- Nonparametric Learning 
-- Konsep Predict, Compare, dan Learn
+**Pembahasan utama:** 
+- Konsep model dan pembelajaran dari data. 
+- Supervised learning dan unsupervised learning. 
+- Model parametrik dan nonparametrik. 
+- Siklus **predict, compare, learn**: membuat prediksi, membandingkannya dengan target, lalu memperbarui model.
 
-Chapter ini menjelaskan dasar proses pembelajaran mesin.
+Bab ini membangun kerangka berpikir yang digunakan pada bab-bab
+berikutnya.
 
 ------------------------------------------------------------------------
 
 ## Chapter 3 - Introduction to Neural Prediction: Forward Propagation
 
-Chapter ketiga mulai membangun neural network sederhana.
+Bab ketiga memperkenalkan prediksi menggunakan neural network sederhana.
 
-Pembahasan utama: 
-- Konsep neural network melakukan prediksi 
-- Hubungan input, weight, dan output 
-- Single input dan single output 
-- Multiple inputs 
-- Multiple outputs 
-- Operasi matrix menggunakan NumPy 
-- Forward propagation
-
-Chapter ini menjelaskan bagaimana neural network menghasilkan prediksi.
+**Pembahasan utama:** 
+- Peran input, weight, dan output. 
+- Prediksi dengan satu atau beberapa input. 
+- Prediksi dengan beberapa output. 
+- Operasi vektor dan matriks menggunakan NumPy. 
+- Forward propagation untuk menghasilkan prediksi.
 
 ------------------------------------------------------------------------
 
 ## Chapter 4 - Introduction to Neural Learning: Gradient Descent
 
-Chapter keempat membahas bagaimana neural network mulai belajar dan
-memperbaiki kesalahan.
+Bab keempat menjelaskan cara model memperbaiki prediksinya berdasarkan
+error.
 
-Pembahasan utama: 
-- Prediksi dan error 
-- Membandingkan hasil prediksi dengan target 
-- Hot and cold learning 
-- Gradient descent 
-- Learning rate 
-- Perubahan nilai weight
-
-Chapter ini menjelaskan proses optimasi pada neural network.
+**Pembahasan utama:** 
+- Membandingkan prediksi dengan target. 
+- Error sebagai sinyal pembelajaran. 
+- Hot-and-cold learning. 
+- Gradient descent dan learning rate. 
+- Pembaruan weight untuk mengurangi error.
 
 ------------------------------------------------------------------------
 
 ## Chapter 5 - Learning Multiple Weights at a Time
 
-Chapter kelima mengembangkan gradient descent untuk menangani banyak
-weight.
+Bab kelima memperluas pembelajaran ke model dengan banyak parameter.
 
-Pembahasan utama: 
-- Multiple input neural network 
-- Banyak weight dalam satu jaringan 
-- Update weight secara bersamaan 
-- Multiple output 
-- Representasi weight menggunakan matrix 
-- Hubungan weight dengan pola yang dipelajari
-
-Chapter ini menjelaskan bagaimana neural network menangani parameter
-yang lebih kompleks.
+**Pembahasan utama:** 
+- Neural network dengan banyak input dan weight. 
+- Pembaruan banyak weight secara sistematis. 
+- Representasi parameter menggunakan matriks. 
+- Hubungan weight dengan pola yang dipelajari model.
 
 ------------------------------------------------------------------------
 
 ## Chapter 6 - Building Your First Deep Neural Network
 
-Chapter keenam membangun deep neural network pertama.
-
-Pembahasan utama: 
-- Permasalahan streetlight 
-- Hubungan antar matrix 
-- Membangun layer neural network 
-- Training menggunakan dataset 
-- Full gradient descent 
-- Batch gradient descent 
-- Stochastic gradient descent 
-- Neural network mempelajari korelasi data 
-- Pengenalan backpropagation 
-- Linear dan nonlinear network
-
-Chapter ini menggabungkan konsep sebelumnya menjadi sebuah deep neural
+Bab keenam menggabungkan konsep sebelumnya untuk membangun deep neural
 network.
+
+**Pembahasan utama:** 
+- Contoh permasalahan streetlight. 
+- Penyusunan layer dan operasi matriks. 
+- Pelatihan menggunakan data. 
+- Full-batch, batch, dan stochastic gradient descent. 
+- Pengenalan backpropagation. 
+- Perbedaan jaringan linear dan nonlinear.
 
 ------------------------------------------------------------------------
 
 ## Chapter 7 - How to Picture Neural Networks: In Your Head and on Paper
 
-Chapter ketujuh membahas cara memahami struktur neural network melalui
-visualisasi.
+Bab ketujuh membantu pembaca memahami dan menggambarkan arsitektur
+neural network.
 
-Pembahasan: 
-- Struktur neural network 
-- Input layer 
-- Hidden layer 
-- Output layer 
-- Hubungan antar neuron 
-- Representasi weight 
-- Membaca arsitektur jaringan
-
-Chapter ini membantu memahami jaringan yang semakin kompleks.
+**Pembahasan utama:** 
+- Input layer, hidden layer, dan output layer. 
+- Hubungan antar-neuron. 
+- Peran weight dalam koneksi antarlayer. 
+- Cara membaca representasi jaringan yang lebih kompleks.
 
 ------------------------------------------------------------------------
 
 ## Chapter 8 - Learning from Multiple Layers: Introduction to Backpropagation
 
-Chapter kedelapan memperdalam konsep backpropagation.
+Bab kedelapan membahas bagaimana error digunakan untuk memperbarui
+parameter di beberapa layer.
 
-Pembahasan: 
-- Forward propagation pada banyak layer 
-- Error propagation 
-- Backward propagation 
-- Weight update 
-- Training neural network multi-layer
-
-Chapter ini menjelaskan bagaimana error digunakan untuk memperbaiki
-seluruh jaringan.
+**Pembahasan utama:** 
+- Forward propagation pada jaringan multilayer. 
+- Perambatan error dari output menuju layer sebelumnya. 
+- Backpropagation dan turunan. 
+- Pembaruan weight pada jaringan multilayer.
 
 ------------------------------------------------------------------------
 
 ## Chapter 9 - Modeling Probabilities and Nonlinearities: Activation Functions
 
-Chapter kesembilan membahas activation function yang membuat neural
-network mampu mempelajari pola nonlinear.
+Bab kesembilan membahas fungsi aktivasi dan perannya dalam neural
+network.
 
-Pembahasan: 
-- Fungsi aktivasi 
-- ReLU 
-- Sigmoid 
-- Tanh 
-- Softmax 
-- Derivative activation function 
-- Activation pada neural network
-
-Chapter ini menjelaskan peran nonlinearitas dalam deep learning.
+**Pembahasan utama:** 
+- Fungsi aktivasi dan nonlinearitas. 
+- ReLU, sigmoid, dan tanh. 
+- Softmax untuk menghasilkan distribusi probabilitas. 
+- Turunan fungsi aktivasi dan penggunaannya dalam pembelajaran.
 
 ------------------------------------------------------------------------
 
 ## Chapter 10 - Introducing Convolutional Neural Networks (CNN)
 
-Chapter kesepuluh memperkenalkan Convolutional Neural Network untuk
-pengolahan data gambar.
+Bab kesepuluh memperkenalkan convolutional neural network untuk
+mempelajari pola spasial, terutama pada data gambar.
 
-Pembahasan: 
-- Permasalahan pengolahan gambar dengan neural network biasa 
-- Konsep convolution 
-- Filter dan kernel 
-- Feature map 
-- Feature detection 
-- Reuse weight 
-- Pooling 
-- Struktur CNN sederhana
-
-Chapter ini menjelaskan dasar computer vision menggunakan deep learning.
+**Pembahasan utama:** 
+- Tantangan pemrosesan gambar dengan jaringan fully connected. 
+- Convolution, filter, dan kernel. 
+- Feature map dan deteksi fitur. 
+- Penggunaan ulang weight (*weight sharing*). 
+- Pooling dan struktur CNN sederhana.
 
 ------------------------------------------------------------------------
 
-# Teknologi yang Digunakan
+## Chapter 11 - Neural Networks that Understand Language: Word Embeddings
+
+Bab kesebelas beralih ke Natural Language Processing (NLP) dan
+representasi numerik teks.
+
+**Pembahasan utama:** 
+- Klasifikasi sentimen teks. 
+- Representasi *bag of words* dan keterbatasannya. 
+- Word embeddings sebagai representasi vektor kata. 
+- Model *fill in the blank* dan *negative sampling*. 
+- Perbandingan embedding dan analogi vektor kata.
+
+Notebook menggunakan eksperimen demonstrasi; hasilnya tidak otomatis
+setara dengan benchmark dataset besar seperti IMDB.
+
+------------------------------------------------------------------------
+
+## Chapter 12 - Recurrent Neural Networks (RNN) for Sequence Modeling
+
+Bab kedua belas mempelajari cara memodelkan data berurutan, ketika
+urutan input membawa informasi.
+
+**Pembahasan utama:** 
+- Keterbatasan representasi yang mengabaikan urutan kata. 
+- Hidden state dan recurrent connection. 
+- Implementasi RNN menggunakan NumPy. 
+- Prediksi kata berikutnya. 
+- Backpropagation Through Time (BPTT). 
+- Evaluasi menggunakan loss dan perplexity.
+
+Eksperimen demonstrasi digunakan untuk memperjelas mekanisme RNN dan
+bukan sebagai klaim performa pada korpus bahasa berskala besar.
+
+------------------------------------------------------------------------
+
+## Chapter 13 - Introducing Automatic Optimization: Building a Deep Learning Framework
+
+Bab ketiga belas membangun framework deep learning mini untuk
+memperlihatkan mekanisme di balik library yang lebih besar.
+
+**Pembahasan utama:** 
+- Tensor dan computation graph. 
+- Automatic differentiation (*autograd*). 
+- Backpropagation dan akumulasi gradien. 
+- Pemeriksaan gradien secara numerik. 
+- Optimizer SGD dan layer seperti `Linear`, `Embedding`, serta fungsi loss. 
+- Implementasi komponen RNN menggunakan framework mini.
+
+------------------------------------------------------------------------
+
+## Chapter 14 - Learning to Write Like Shakespeare: Long Short-Term Memory (LSTM)
+
+Bab keempat belas memperluas pemodelan urutan ke tingkat karakter dan
+membahas kesulitan pembelajaran pada urutan panjang.
+
+**Pembahasan utama:** 
+- Character-level language modeling. 
+- Truncated Backpropagation Through Time (TBPTT). 
+- Vanishing gradients dan exploding gradients. 
+- Struktur LSTM dan fungsi forget, input, serta output gate. 
+- Implementasi dan pelatihan RNN/LSTM. 
+- Evaluasi dan generasi sampel teks.
+
+
+------------------------------------------------------------------------
+
+## Chapter 15 - Deep Learning on Unseen Data: Federated Learning
+
+Bab kelima belas membahas privasi data ketika beberapa pihak ingin
+berkontribusi pada pelatihan model tanpa memusatkan data mentah mereka.
+
+**Pembahasan utama:** 
+- Perbedaan pelatihan terpusat dan federated learning. 
+- Klasifikasi spam sebagai contoh tugas pembelajaran. 
+- Risiko informasi sensitif bocor melalui pembaruan bobot. 
+- Secure aggregation untuk menggabungkan pembaruan peserta. 
+- Homomorphic encryption, yaitu operasi tertentu pada data terenkripsi. 
+- Keterbatasan perlindungan privasi.
+
+**Catatan:** federated learning saja tidak menjamin privasi.
+Pembaruan model masih dapat membocorkan informasi, sedangkan simulasi
+dalam notebook merupakan demonstrasi konsep, bukan sistem keamanan siap
+produksi. Bagian enkripsi Paillier menggunakan pustaka `phe`.
+
+------------------------------------------------------------------------
+
+# Teknologi dan Dependensi
 
 -   Python
--   Jupyter Notebook
+-   Jupyter Notebook dan IPython kernel
 -   NumPy
+-   pandas
 -   Matplotlib
+-   `phe` untuk demonstrasi homomorphic encryption pada Chapter 15
 
 ------------------------------------------------------------------------
 
 # Cara Menjalankan Repository
 
-Clone repository:
+### 1. Clone repository
 
 ``` bash
-git clone https://github.com/username/Grokking-Deep-Learning-Recreation.git
-```
-
-Masuk ke folder repository:
-
-``` bash
+git clone https://github.com/monicafebyana-wq/Grokking-Deep-Learning-Recreation.git
 cd Grokking-Deep-Learning-Recreation
 ```
 
-Install library yang diperlukan:
+### 2. (Opsional) Buat virtual environment
 
 ``` bash
-pip install -r requirements.txt
+python -m venv .venv
 ```
 
-Jalankan Jupyter Notebook:
+Aktifkan lingkungan virtual sesuai sistem operasi:
+
+``` bash
+# Windows
+.venv\Scripts\activate
+
+# macOS/Linux
+source .venv/bin/activate
+```
+
+### 3. Instal dependensi
+
+``` bash
+python -m pip install -r requirements.txt
+```
+
+### 4. Jalankan Jupyter Notebook
 
 ``` bash
 jupyter notebook
 ```
 
+Kemudian buka notebook chapter yang ingin dipelajari. Jika hanya ingin
+menjalankan Chapter 1--14, dependensi `phe` tidak digunakan oleh
+notebook tersebut; pustaka itu diperlukan untuk bagian homomorphic
+encryption pada Chapter 15.
+
 ------------------------------------------------------------------------
 
 # Tujuan Pembelajaran
 
-Melalui repository ini diharapkan dapat memahami:
+Setelah mempelajari notebook Chapter 1--15, pembaca diharapkan mampu:
 
--   Bagaimana neural network melakukan prediksi
--   Bagaimana neural network belajar dari error
--   Cara kerja gradient descent
--   Cara memperbarui weight
--   Dasar pembangunan deep neural network
--   Konsep awal backpropagation
+-   Menjelaskan dasar neural network dan proses pembelajarannya.
+-   Memahami forward propagation, gradient descent, dan backpropagation.
+-   Menguraikan peran fungsi aktivasi dan CNN.
+-   Mengubah teks menjadi representasi numerik dan memahami word
+    embeddings.
+-   Menjelaskan RNN, BPTT, dan LSTM untuk data berurutan.
+-   Memahami prinsip autograd dan komponen dasar framework deep
+    learning.
+-   Menjelaskan federated learning, secure aggregation, dan homomorphic
+    encryption.
+-   Mengevaluasi hasil eksperimen secara kritis dengan mempertimbangkan
+    ukuran serta karakteristik dataset.
+
+------------------------------------------------------------------------
+
+# Integritas Akademik dan Batasan
+
+Notebook ditujukan untuk pembelajaran dan reproduksi konsep.
+Implementasi yang disederhanakan atau dataset demonstrasi ditandai
+sebagai adaptasi, bukan disajikan sebagai hasil eksperimen asli penulis
+buku. Hasil metrik perlu dibaca bersama konteks dataset, prosedur
+evaluasi, dan keterbatasan eksperimen masing-masing notebook.
 
 ------------------------------------------------------------------------
 
 # Referensi
 
-Trask, A. W.\
-**Grokking Deep Learning**.
+Trask, A. W. (2019). *Grokking Deep Learning*. Manning Publications.
 
-Repository ini dibuat untuk tujuan pembelajaran dan implementasi ulang
-konsep deep learning.
+Repository kode pendamping yang disebut dalam buku:\
+https://github.com/iamtrask/grokking-deep-learning
