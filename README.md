@@ -2,7 +2,7 @@
 
 ## Identitas Mahasiswa
 
-**Nama:** Monica Febyana\
+**Nama:** Monica Febyana
 **NIM:** 101032330068
 
 ------------------------------------------------------------------------
